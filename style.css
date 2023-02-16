@@ -1,0 +1,265 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #111;
+  }
+  
+  /* Banner Styles */
+  .banner {
+    height: 500px;
+    background-image: url('pp.jpg');
+    background-size:0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .banner h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+  
+  .banner p {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    border: 0;
+ color: #fff;
+  background-color: #f40b55;
+  scale: 1.05;
+  }
+  
+  /* About Me Styles */
+  .about-me {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .about-me h2 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .about-me p {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  /* Portfolio Styles */
+  .portfolio {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .project {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    border: #000;
+    border-color: #000;
+  }
+  
+  .project h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .project p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Contact Styles */
+  .contact {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .contact form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .contact label {
+    display: block;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Apply the animation to the portfolio item */
+.portfolio{
+  animation: slide-in 6s ease-in-out;
+}
+
+
+.fade {
+  opacity: 1;
+  transition: opacity 3s;
+}
+
+.fade:hover {
+  opacity: 0.5;
+}
+.bot{
+
+  box-shadow: #ec0a0a;
+  margin: 15px;
+  font-style: oblique;
+  font-variant: small-caps;
+}
+.get{
+    background-color: #000000;
+    padding: 50px;
+    text-align: center;
+  
+}
+.get h1{
+
+  font-size: 38px;
+  margin: 10px 0;
+  font-weight: 200;
+  font-style: normal;
+  color: #f9f9f9;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+.get h2,h3{
+
+  font-size: 25px;
+  margin: 10px 0;
+  font-weight: 200;
+  font-style: normal;
+  color: #f9f9f9;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+.footericons{
+
+  font-size: 25px;
+  margin: 10px 0;
+  font-weight: 200;
+
+  color: #f9f9f9;
+  
+}
+.footericons i:hover{
+  color: #f04366b6;
+}
+.login2{
+  background-color: #000;
+  border-radius: 0;
+  font-size: bold;
+  transition: 0.5s all;
+}
+
+.login2:hover{
+  border: 0;
+ color: #fff;
+  background-color: #8E43F0;
+  scale: 1.05;
+}
+.ani{
+  display: inline-block;
+  animation: typing 5s steps(15, end);
+}
+
+@keyframes typing {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
